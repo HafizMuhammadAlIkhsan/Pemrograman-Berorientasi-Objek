@@ -1,8 +1,14 @@
+import java.util.Scanner;
+
 public class Soal5 {
 
     public static void main(String[] args) {
-        String str1 = "hello";
-        String str2 = "java";
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Masukan Kata: ");
+        String str1 = scan.nextLine();
+        System.out.print("Masukan Kata: ");
+        String str2 = scan.nextLine();
+
         int sum = str1.length() + str2.length();
 
         System.out.println(sum);
@@ -15,6 +21,8 @@ public class Soal5 {
         String capitalizedA = str1.substring(0, 1).toUpperCase() + str1.substring(1);
         String capitalizedB = str2.substring(0, 1).toUpperCase() + str2.substring(1);
         System.out.println(capitalizedA + " " + capitalizedB);
+
+        scan.close();
     }
 }
 
