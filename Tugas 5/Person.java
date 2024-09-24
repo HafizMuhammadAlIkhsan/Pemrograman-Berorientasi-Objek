@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Person {
+abstract class Person {
     private String id;
     private String nama;
 
